@@ -1,6 +1,6 @@
 class TenMinuteWalk
 
-  def city_mapper
-  end 
+  def checking(array)
+  end
 
 end
