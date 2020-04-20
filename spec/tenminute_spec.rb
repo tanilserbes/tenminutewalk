@@ -8,8 +8,19 @@ describe TenMinuteWalk do
       expect(subject.checking(sample)).to eq 10
     end
 
+    it 'collects N-W directions array size to be 5' do
+      expect(subject.collect_nw(sample)).to eq 5
+    end
+
+    it 'collects S-E directions array size to be 5' do
+      expect(subject.collect_se(sample)).to eq 5
+    end
+
     it 'if the given array includes correct direction instructions' do
       expect(subject.direction_correct?(sample)).to equal true
     end
+
+
+
   end
 end
